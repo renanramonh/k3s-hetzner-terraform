@@ -32,12 +32,6 @@ After installing kubectl, you need to copy the kubeconfig file from the master n
 You can do this by running the following command on your local machine:
 
 ```
- make copyKubeConfig
-```
-
-or
-
-```
  scp -i ~/.ssh/id_rsa cluster@<master_node_public_ip>:/etc/rancher/k3s/k3s.yaml ~/.kube/hetzner-config.yaml && sed -i 's 127.0.0.1 <master_node_public_ip> g'  ~/.kube/hetzner-config.yaml
 ```
 
