@@ -21,12 +21,6 @@ Hetzner is a good cloud provider in Europe, this project show us how build a kub
 2. Create a ssh file on the `.ssh` folder of this repository with the following names:
    * `local_rsa.pub`: your public ssh key used to access the cluster
 
-## Running Terraform
-* `make plan`: run terraform plan with variables
-* `make apply`: run terraform apply with variables
-* `make copyKubeConfig`: copy k8s config from master node to local ~/.kube/hetzner-config
-* `make destroy`: run terraform destroy with variables
-
 ## Copy cluster to config file
 After installing kubectl, you need to copy the kubeconfig file from the master node to your local machine.
 You can do this by running the following command on your local machine:
